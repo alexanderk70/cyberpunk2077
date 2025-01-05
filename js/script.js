@@ -1,10 +1,10 @@
-// let ibg = document.querySelectorAll('.ibg')
-// for (let i = 0; i < ibg.length; i++) {
-//   if (ibg[i].querySelector('img')) {
-//     ibg[i].style.backgroundImage =
-//       'url(' + ibg[i].querySelector('img').getAttribute('src') + ')'
-//   }
-// }
+let ibg = document.querySelectorAll('.ibg')
+for (let i = 0; i < ibg.length; i++) {
+  if (ibg[i].querySelector('img')) {
+    ibg[i].style.backgroundImage =
+      'url(' + ibg[i].querySelector('img').getAttribute('src') + ')'
+  }
+}
 // -----------------------------------------------------------------------
 
 let firstBlock = document.querySelector('.first-block')
@@ -12,7 +12,7 @@ let firstBlock = document.querySelector('.first-block')
 setInterval(nextBG, 3500)
 
 function nextBG() {
-  if (firstBlock.style.backgroundImage == 'url("../img/firstBlock/BG1.jpg")') {
+  if (firstBlock.style.backgroundImage == 'url("img/firstBlock/BG1.jpg")') {
     firstBlock.style.backgroundImage = 'url("img/firstBlock/BG2.jpg")'
   } else if (
     firstBlock.style.backgroundImage == 'url("img/firstBlock/BG2.jpg")'
