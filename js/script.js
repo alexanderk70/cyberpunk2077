@@ -12,7 +12,7 @@ let firstBlock = document.querySelector('.first-block')
 setInterval(nextBG, 3500)
 
 function nextBG() {
-  if (firstBlock.style.backgroundImage == 'url("img/firstBlock/BG1.jpg")') {
+  if (firstBlock.style.backgroundImage == 'url("../img/firstBlock/BG1.jpg")') {
     firstBlock.style.backgroundImage = 'url("img/firstBlock/BG2.jpg")'
   } else if (
     firstBlock.style.backgroundImage == 'url("img/firstBlock/BG2.jpg")'
